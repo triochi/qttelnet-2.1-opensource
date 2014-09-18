@@ -259,7 +259,7 @@ private slots:
     }
     void lineReturnPressed()
     {
-        t->sendData(lineEdit->text());
+        t->sendData(lineEdit->text()+QString("\r\n"));
         lineEdit->clear();
     }
     void deleteCharOrLogout()
